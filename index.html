@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h3>Formulário</h3>
+    <form>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <br>
+         <label for="data">Data de nascimento: </label>
+        <input type="date" id="data" name="data">
+        <br>
+        <label for="end">Endereço:</label>
+        <input type="text" id="end" name="end">
+        <br>
+        <label for="bair">Bairro:</label>
+        <input type="text" id="bair" name="bair">
+        <label for="cid">Cidade:</label>
+        <input type="text" id="cid" name="cid">
+        <br>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep">
+        <label for="est">Estado:</label>
+        <select id="est" name="est">
+            <option value="Ceará">Ceará</option>
+            <option value="Mato grosso">Mato grosso</option>
+            <option value="Bahia">Bahia</option>
+        </select>
+     </fieldset>
+     
+     <form>
+     <fieldset>
+         <legend>Dados profissionais</legend>
+         
+             <p>Natureza do Cargo</p>
+             <input type="radio" name="opc" value="">
+             <label for="ger">Gerência </label>
+             <input type="radio" name="opc" value="">
+             <label for="fin">Financeiro</label>
+             <input type="radio" name="opc">
+             <label for="rec">Recepcão</label>
+             <input type="radio" name="opc">
+             <label for="adm">Administrativo</label>
+             <input type="radio" name="opc">
+             <label for="jur">Jurídico</label>
+             <br>
+             <p>Área de interesse</p>
+             <input type="checkbox">
+             <label for="comp">Computação</label>
+             <input type="checkbox">
+             <label for="quim">Química</label>
+             <input type="checkbox">
+             <label for="Mam">Meio-Ambiente</label>
+             <input type="checkbox">
+             <label for="eng">Engenharia</label>
+             <input type="checkbox">
+             <label for="mat">Matemática</label>
+             <br>
+             
+             <label for="mini">Mini- currículo: </label><br>
+             
+             <textarea></textarea>
+         </fieldset>
+         <input type="submit" value="Enviar">
+     <input type="reset" value="Redefinir">
+         </form>
+     <br>
+</body>
+</html>
