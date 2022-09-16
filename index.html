@@ -2,77 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabela</title>
+
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            height: 12px;
+        }
+
+       
+        p{
+            border: 2px solid black;
+            font-size: 15px;
+            
+            
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    </style>
 </head>
 <body>
+    
+    <h3>Dados Pessoais</h3>
 
-    <h3>Formulário</h3>
-    <form>
-    <fieldset>
-        <legend>Dados pessoais</legend>
+    <table>
+        <tr style="text-align: center;">
+            <th style="width: 100px;">Nome</th>
+            <th style="width: 200px;">Data de Nascimento</th>
+            <th style="width: 200px;">Endereço</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>CEP</th>
+            <th>Estado</th>
+        </tr>
+
+        <tr style="text-align: center;">
+            <td>Gustavo</td>
+            <td>31/08/2004</td>
+            <td>Rua Paulo Afonso, 1790 B</td>
+            <td>Alto Alegre I</td>
+            <td>Maracanaú</td>
+            <td>610500-09</td>
+            <td>Ceará</td>
+            
+        </tr>
         
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome">
-        <br>
-         <label for="data">Data de nascimento: </label>
-        <input type="date" id="data" name="data">
-        <br>
-        <label for="end">Endereço:</label>
-        <input type="text" id="end" name="end">
-        <br>
-        <label for="bair">Bairro:</label>
-        <input type="text" id="bair" name="bair">
-        <label for="cid">Cidade:</label>
-        <input type="text" id="cid" name="cid">
-        <br>
-        <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep">
-        <label for="est">Estado:</label>
-        <select id="est" name="est">
-            <option value="Ceará">Ceará</option>
-            <option value="Mato grosso">Mato grosso</option>
-            <option value="Bahia">Bahia</option>
-        </select>
-     </fieldset>
-     
-     <form>
-     <fieldset>
-         <legend>Dados profissionais</legend>
-         
-             <p>Natureza do Cargo</p>
-             <input type="radio" name="opc" value="">
-             <label for="ger">Gerência </label>
-             <input type="radio" name="opc" value="">
-             <label for="fin">Financeiro</label>
-             <input type="radio" name="opc">
-             <label for="rec">Recepcão</label>
-             <input type="radio" name="opc">
-             <label for="adm">Administrativo</label>
-             <input type="radio" name="opc">
-             <label for="jur">Jurídico</label>
-             <br>
-             <p>Área de interesse</p>
-             <input type="checkbox">
-             <label for="comp">Computação</label>
-             <input type="checkbox">
-             <label for="quim">Química</label>
-             <input type="checkbox">
-             <label for="Mam">Meio-Ambiente</label>
-             <input type="checkbox">
-             <label for="eng">Engenharia</label>
-             <input type="checkbox">
-             <label for="mat">Matemática</label>
-             <br>
-             
-             <label for="mini">Mini- currículo: </label><br>
-             
-             <textarea></textarea>
-         </fieldset>
-         <input type="submit" value="Enviar">
-     <input type="reset" value="Redefinir">
-         </form>
-     <br>
+    </table>
+
+    <h3>Dados Profissionais</h3>
+    
+    <table>
+        <tr>
+            <th style="width: 200px;">Natureza do Cargo</th>
+            <th style="width: 200px;">Àrea de Interesse</th>
+            
+        </tr>
+        <tr style="text-align: center;">
+            <td>Computação</td>
+            <td>Química</td>
+        </tr>
+    </table>
+
+   
+    
 </body>
 </html>
